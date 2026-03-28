@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PT. Puri Pertiwi International - Light Of Easy Life. Trading, Agriculture, Farm, Production & Software Application company based in Indonesia.">
+    <meta name="keywords" content="Puri Pertiwi, ICOMM-EX, trading, agriculture, herbs, spices, Indonesia export, coffee">
+    <meta name="author" content="PT. Puri Pertiwi International">
+    <meta property="og:title" content="PT. Puri Pertiwi International">
+    <meta property="og:description" content="Light Of Easy Life - Be Creative. Multi-sector company in Trading, Agriculture, Farm, Production & Software.">
+    <meta property="og:type" content="website">
+    <title>PT. Puri Pertiwi International - Light Of Easy Life</title>
+    <!-- LOCAL ASSETS -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader" role="status" aria-label="Loading">
+        <div class="preloader-inner">
+            <div class="preloader-logo">PURI PERTIWI</div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <div class="toast-icon success">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="toast-content">
+            <strong>Success!</strong>
+            <span id="toastMessage">Your message has been sent.</span>
+        </div>
+    </div>
+
+    <!-- NAV OVERLAY -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="PT. Puri Pertiwi International - Home">
+                <img src="assets/icons/Logo Nav 1.png" alt="PT. Puri Pertiwi International" class="nav-logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#home" class="active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#vision" role="menuitem">Vision & Mission</a></li>
+                <li role="none"><a href="#business" role="menuitem">Business</a></li>
+                <li role="none"><a href="#products" role="menuitem">Products</a></li>
+                <li role="none"><a href="#team" role="menuitem">Team</a></li>
+                <li role="none"><a href="#contact" class="nav-cta" role="menuitem">Contact Us</a></li>
+                <li role="none">
+                    <div class="lang-switch">
+                        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+                        <button class="lang-btn" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+                    </div>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Established Since 2022
+                </div>
+                <h1 class="hero-title">
+                    PT. <span class="highlight">Puri Pertiwi</span><br>International
+                </h1>
+                <p class="hero-subtitle">
+                    Engaged in Trading, Agriculture, Farm, Production & Software Application
+                </p>
+                <p class="hero-tagline">"Light Of Easy Life"</p>
+                <p class="hero-tagline-sub">Be Creative</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> <span>Discover More</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/Header01.gif" alt="Company Background" style="width: 100%; max-width: 100%; object-fit: cover; height: auto; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); animation: fadeInRight 1s ease 0.6s both;">
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER -->
+    <div class="counter-section" aria-label="Company statistics">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item reveal">
+                    <div class="counter-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="counter-number" data-target="6">0</div>
+                    <div class="counter-label">Business Sectors</div>
+                </div>
+                <div class="counter-item reveal reveal-delay-1">
+                    <div class="counter-icon"><i class="fas fa-box-open"></i></div>
+                    <div class="counter-number" data-target="75">0</div>
+                    <div class="counter-label">Product Varieties</div>
+                </div>
+                <div class="counter-item reveal reveal-delay-2">
+                    <div class="counter-icon"><i class="fas fa-tags"></i></div>
+                    <div class="counter-number" data-target="3">0</div>
+                    <div class="counter-label">Major Brands</div>
+                </div>
+                <div class="counter-item reveal reveal-delay-3">
+                    <div class="counter-icon"><i class="fas fa-users"></i></div>
+                    <div class="counter-number" data-target="4">0</div>
+                    <div class="counter-label">Expert Team Members</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-badge-float">
+                        <i class="fas fa-award"></i>
+                        Legal
+                    </div>
+                    <div class="about-img-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>PT. Puri Pertiwi International</span>
+                    </div>
+                    <div class="about-experience">
+                        <div class="about-experience-number">2022</div>
+                        <div class="about-experience-text">Established</div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <div class="section-tag">
+                        <i class="fas fa-info-circle"></i> About Us
+                    </div>
+                    <h2>
+                        Building a <span class="highlight">Better Future</span> Through Innovation
+                    </h2>
+                    <p class="about-text">
+                        PT PURI PERTIWI INTERNATIONAL was established in 2022 in accordance with the Decree of the Ministry of Law and Human Rights AHU-0047374.ah.01.01 of 2022 concerning the Legalization of the Establishment of a Limited Liability Company Legal Entity.
+                    </p>
+                    <p class="about-text">
+                        We are engaged in various fields such as Trading, Agriculture, Farm, Production, and Software Application, committed to creating economic welfare and improving the quality of local industrial home products.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trading & Export</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Agriculture</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Farm & Livestock</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Production</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Software Apps</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Home Industry</span>
+                        </div>
+                    </div>
+                    <a href="#business" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> <span>Our Business</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- VISION & MISSION -->
+    <section class="vision-mission" id="vision">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-compass"></i> Our Direction
+                </div>
+                <h2 class="section-title">Vision & <span class="highlight">Mission</span></h2>
+                <p class="section-desc">Guiding principles that drive our company forward towards excellence</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="vm-grid">
+                <div class="vm-card reveal">
+                    <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p><strong style="color: var(--accent); font-size: 1.15rem;">Creating Economic Welfare, Established Peaceful Enjoy</strong></p><br>
+                    <p>We envision a future where economic prosperity is accessible to all, built on sustainable practices and innovative solutions that bring peace and joy to communities worldwide.</p>
+                </div>
+                <div class="vm-card reveal reveal-delay-1">
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> Creating smart technology and appropriate system for agriculture, livestock and business trading</li>
+                        <li><i class="fas fa-chevron-right"></i> Build friendship, business cooperation and investing with local, international entrepreneurs and government</li>
+                        <li><i class="fas fa-chevron-right"></i> Improving creative economy based on natural and environment conservation</li>
+                        <li><i class="fas fa-chevron-right"></i> Build cooperation with local farmers and improve the quality of local industrial home</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section class="business" id="business">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-briefcase"></i> What We Do</div>
+                <h2 class="section-title">Our Business <span class="highlight">Activities</span></h2>
+                <p class="section-desc">Diverse portfolio spanning multiple industries for comprehensive solutions</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="business-grid">
+                <div class="business-card reveal">
+                    <div class="business-icon trading"><i class="fas fa-chart-line"></i></div>
+                    <h3>Trading</h3>
+                    <p>Comprehensive trading solutions including domestic and international markets</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Big Trade of Fishery Products</li>
+                        <li><i class="fas fa-circle"></i> Big Trade of Rice & Palawija</li>
+                        <li><i class="fas fa-circle"></i> Herbs, Spices & Various Goods</li>
+                        <li><i class="fas fa-circle"></i> Wholesale Trade on Fees/Contracts</li>
+                        <li><i class="fas fa-circle"></i> Money Management Services</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal reveal-delay-1">
+                    <div class="business-icon agriculture"><i class="fas fa-seedling"></i></div>
+                    <h3>Agriculture</h3>
+                    <p>Sustainable farming practices with diverse crop cultivation</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Herbs & Spices</li>
+                        <li><i class="fas fa-circle"></i> Various Palawija</li>
+                        <li><i class="fas fa-circle"></i> Vegetables & Fruits</li>
+                        <li><i class="fas fa-circle"></i> Various Bulbs</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal reveal-delay-2">
+                    <div class="business-icon farm"><i class="fas fa-horse"></i></div>
+                    <h3>Farm</h3>
+                    <p>Comprehensive livestock breeding and cultivation</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Beef & Dairy Cattle</li>
+                        <li><i class="fas fa-circle"></i> Sheep & Goat Breeding</li>
+                        <li><i class="fas fa-circle"></i> Chicken & Laying Races</li>
+                        <li><i class="fas fa-circle"></i> Duck Cultivation</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal">
+                    <div class="business-icon production"><i class="fas fa-industry"></i></div>
+                    <h3>Production</h3>
+                    <p>Home industry production for food processing and preservation</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Home Food Processing Industry</li>
+                        <li><i class="fas fa-circle"></i> Processed Meat Products</li>
+                        <li><i class="fas fa-circle"></i> Poultry Products Industry</li>
+                        <li><i class="fas fa-circle"></i> Fruit Preservation Industry</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal reveal-delay-1">
+                    <div class="business-icon software"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Software Applications</h3>
+                    <p>Digital solutions for modern business needs</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Software Publishing</li>
+                        <li><i class="fas fa-circle"></i> Application Development</li>
+                        <li><i class="fas fa-circle"></i> Design Services</li>
+                        <li><i class="fas fa-circle"></i> Digital Marketing</li>
+                    </ul>
+                </div>
+                <div class="business-card reveal reveal-delay-2">
+                    <div class="business-icon other"><i class="fas fa-utensils"></i></div>
+                    <h3>Others</h3>
+                    <p>Additional business ventures in hospitality and tourism</p>
+                    <ul>
+                        <li><i class="fas fa-circle"></i> Restaurant & Cafe</li>
+                        <li><i class="fas fa-circle"></i> Tourism Area</li>
+                        <li><i class="fas fa-circle"></i> Recycle Materials</li>
+                        <li><i class="fas fa-circle"></i> Mining Support Activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-rocket"></i> Our Innovations</div>
+                <h2 class="section-title">Our <span class="highlight">Projects</span></h2>
+                <p class="section-desc">Innovative platforms and systems designed to empower communities</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-img puri-bg">
+                        <div class="project-inner">
+                            <h3>PURI</h3>
+                            <p class="project-subtitle">Produk Usaha Rakyat Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>PURI Online Marketplace</h4>
+                        <p>Online marketplace platform for agricultural and livestock products. Connecting farmers directly with consumers through a streamlined digital experience.</p>
+                        <span class="project-tag"><i class="fas fa-shopping-cart"></i> E-Commerce Platform</span>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-card-img icommex-bg">
+                        <div class="project-inner">
+                            <h3>ICOMM-EX</h3>
+                            <p class="project-subtitle">Indonesia Commodity Export</p>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>Indonesia Commodity Export</h4>
+                        <p>Since ancient times, Indonesia has been known as the best spice & herbs producing country. We present the best products for the global market.</p>
+                        <span class="project-tag"><i class="fas fa-globe"></i> Export Platform</span>
+                    </div>
+                </div>
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card-img dims-bg">
+                        <div class="project-inner">
+                            <h3>D!MS</h3>
+                            <p class="project-subtitle">Digital Invert Money System</p>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4>Digital Financial System</h4>
+                        <p>Advanced digital financial management system designed to streamline transactions and provide efficient money management solutions.</p>
+                        <span class="project-tag"><i class="fas fa-coins"></i> FinTech Solution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-box-open"></i> Our Products</div>
+                <h2 class="section-title">Featured <span class="highlight">Products</span></h2>
+                <p class="section-desc">Quality products from Indonesian local farmers and producers</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="products-categories reveal">
+                <button class="product-filter active" data-filter="all">All Products</button>
+                <button class="product-filter" data-filter="herbs">Herbs & Spices</button>
+                <button class="product-filter" data-filter="coffee">Coffee</button>
+                <button class="product-filter" data-filter="snacks">Snacks</button>
+                <button class="product-filter" data-filter="food">Food Products</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <div class="product-card reveal" data-category="herbs"><div class="product-img herbs"><i class="fas fa-mortar-pestle"></i><span class="product-badge">Best Seller</span></div><div class="product-info"><h4>Herbs & Spices Collection</h4><p>75+ varieties of premium Indonesian herbs & spices powder - 500g packaging</p><span class="product-category">ICOMM-EX Brand</span></div></div>
+                <div class="product-card reveal" data-category="coffee"><div class="product-img coffee"><i class="fas fa-mug-hot"></i><span class="product-badge">Premium</span></div><div class="product-info"><h4>JayaBaya Arabica Coffee</h4><p>Java Parahyangan High Grade - Dark & Medium Roasted Beans</p><span class="product-category">JayaBaya Brand</span></div></div>
+                <div class="product-card reveal" data-category="coffee"><div class="product-img coffee"><i class="fas fa-mug-hot"></i></div><div class="product-info"><h4>JayaBaya Robusta Coffee</h4><p>Java Parahyangan High Grade - Premium Robusta Coffee Beans</p><span class="product-category">JayaBaya Brand</span></div></div>
+                <div class="product-card reveal" data-category="snacks"><div class="product-img snacks"><i class="fas fa-cookie-bite"></i><span class="product-badge">New</span></div><div class="product-info"><h4>Mustopa Potato Crumb Stick</h4><p>Enjoyment Potato snacks in multiple flavors - tube & pouch</p><span class="product-category">Mustopa Brand</span></div></div>
+                <div class="product-card reveal" data-category="food"><div class="product-img food"><i class="fas fa-bread-slice"></i></div><div class="product-info"><h4>Boñas Cheese Cake</h4><p>Pineapple Banana Cheese Cake - Subang specialty</p><span class="product-category">PURI Brand</span></div></div>
+                <div class="product-card reveal" data-category="food"><div class="product-img food"><i class="fas fa-bowl-rice"></i></div><div class="product-info"><h4>SAH Rice Collection</h4><p>Red Rice, Organic, Black Rice - 5kg premium packaging</p><span class="product-category">SAH Brand</span></div></div>
+                <div class="product-card reveal" data-category="food"><div class="product-img food"><i class="fas fa-utensils"></i></div><div class="product-info"><h4>Goloyor Meatball Noodles</h4><p>Special Recipe Sundanese - Mie Bakso with authentic flavor</p><span class="product-category">PURI Brand</span></div></div>
+                <div class="product-card reveal" data-category="food"><div class="product-img food"><i class="fas fa-oil-can"></i></div><div class="product-info"><h4>COCO Virgin Coconut Oil</h4><p>Minyak Goreng - Pure virgin coconut cooking oil</p><span class="product-category">COCO Brand</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-concierge-bell"></i> Our Services</div>
+                <h2 class="section-title">What We <span class="highlight">Offer</span></h2>
+                <p class="section-desc">Comprehensive services from production to global delivery</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Fresh & Affordable</h3>
+                    <p>We produce affordable, seasonal and fresh spices from local farmers with the highest quality standards.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <h3>Various Types & Sizes</h3>
+                    <p>We provide various types and tastes, from various sizes to suit your needs, with customizable packaging.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>Global Shipping</h3>
+                    <p>We are ready to serve the best herbs & spices, pack and deliver worldwide, both locally and internationally.</p>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-quote-left"></i> Testimonials</div>
+                <h2 class="section-title">What People <span class="highlight">Say</span></h2>
+                <p class="section-desc">Trusted by partners and clients across industries</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="testimonials-slider reveal">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The quality of herbs and spices from ICOMM-EX is exceptional. We've been consistently impressed by the freshness and authentic taste of their products. Highly recommended for international buyers."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">AK</div>
+                                <div class="testimonial-author-info">
+                                    <h4>Ahmad Kurniawan</h4>
+                                    <p>Export Partner, Singapore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Working with Puri Pertiwi has been a wonderful experience. Their team is professional, responsive, and truly committed to quality. The JayaBaya coffee is among the best we've tasted."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">SR</div>
+                                <div class="testimonial-author-info">
+                                    <h4>Sarah Rahman</h4>
+                                    <p>Café Owner, Jakarta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"As a local farmer, partnering with PT Puri Pertiwi International has significantly improved our market reach. Their support system and fair pricing model truly benefit the farming community."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">BS</div>
+                                <div class="testimonial-author-info">
+                                    <h4>Budi Santoso</h4>
+                                    <p>Local Farmer, West Java</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevTestimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-btn" id="nextTestimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots">
+                    <div class="testimonial-dot active" data-index="0"></div>
+                    <div class="testimonial-dot" data-index="1"></div>
+                    <div class="testimonial-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-users"></i> Our People</div>
+                <h2 class="section-title">Meet Our <span class="highlight">Team</span></h2>
+                <p class="section-desc">Professional, responsible and friendly performance applied in the team</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-photo"><i class="fas fa-user-tie"></i></div>
+                    <div class="team-info">
+                        <div class="team-role">President Commissioner</div>
+                        <h4>Puri Novita Dewi S.Si, MM</h4>
+                        <div class="team-location"><i class="fas fa-map-marker-alt"></i> Bandung</div>
+                        <p class="team-education">Bachelor of Biology ITB Bandung<br>Magister Management Finance STIMA IMMI</p>
+                        <div class="team-socials">
+                            <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card reveal reveal-delay-1">
+                    <div class="team-photo"><i class="fas fa-user-tie"></i></div>
+                    <div class="team-info">
+                        <div class="team-role">Commissioner</div>
+                        <h4>Edwien Satya</h4>
+                        <div class="team-location"><i class="fas fa-map-marker-alt"></i> Jakarta</div>
+                        <p class="team-education">International Relations</p>
+                        <div class="team-socials">
+                            <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card reveal reveal-delay-2">
+                    <div class="team-photo"><i class="fas fa-user-tie"></i></div>
+                    <div class="team-info">
+                        <div class="team-role">President Director</div>
+                        <h4>Ama Hakim</h4>
+                        <div class="team-location"><i class="fas fa-map-marker-alt"></i> Bandung</div>
+                        <p class="team-education">Programmer & Technology</p>
+                        <div class="team-socials">
+                            <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card reveal reveal-delay-3">
+                    <div class="team-photo"><i class="fas fa-user-tie"></i></div>
+                    <div class="team-info">
+                        <div class="team-role">Director</div>
+                        <h4>Piliyanto</h4>
+                        <div class="team-location"><i class="fas fa-map-marker-alt"></i> Jakarta</div>
+                        <p class="team-education">Marketing & Business Development</p>
+                        <div class="team-socials">
+                            <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEGALITY -->
+    <section class="legality">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-shield-halved"></i> Legal Information</div>
+                <h2 class="section-title">Company <span class="highlight">Legality</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="legality-content">
+                <div class="legality-card reveal">
+                    <div class="legality-icon"><i class="fas fa-gavel"></i></div>
+                    <h4>Legal Entity</h4>
+                    <p>AHU-0047374.ah.01.01 of 2022<br>Ministry of Law and Human Rights</p>
+                </div>
+                <div class="legality-card reveal reveal-delay-1">
+                    <div class="legality-icon"><i class="fas fa-id-card"></i></div>
+                    <h4>NIB (Business ID)</h4>
+                    <p>0806220054004<br>Investment Coordination Board</p>
+                </div>
+                <div class="legality-card reveal reveal-delay-2">
+                    <div class="legality-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>Digital Certification</h4>
+                    <p>Electronically Signed<br>Officially Registered Company</p>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag"><i class="fas fa-headset"></i> Get In Touch</div>
+                <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+                <p class="section-desc">We'd love to hear from you. Reach out for any inquiries or business opportunities.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-cards reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-location-dot"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Our Office</h4>
+                            <p>Jl. Raya Kranggan Permai<br>Cluster Cibubur Villa 1 Blok A No.33<br>Jatiraden, Jatisampurna<br>Bekasi 17433, West Java, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Phone & Fax</h4>
+                            <p><a href="https://wa.me/6281122331144"><i class="fab fa-whatsapp"></i> 0811-2233-1144</a><br><a href="tel:+622184346090"><i class="fas fa-phone"></i> 021-84346090</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:Puripertiwiinternational2022@gmail.com">Puripertiwiinternational2022@gmail.com</a><br><a href="mailto:Icommex2022@gmail.com">Icommex2022@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-card-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 09:00 - 17:00 WIB<br>Saturday: 09:00 - 14:00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <h3>Send Us a <span style="color: var(--accent);">Message</span></h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject">
+                                <option value="">Select a subject</option>
+                                <option>Product Inquiry</option>
+                                <option>Business Partnership</option>
+                                <option>Export/Import</option>
+                                <option>General Question</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" placeholder="Tell us about your inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" id="submitBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <div class="nav-logo-icon">🦋</div>
+                        <div class="nav-logo-text"><span>PURI PERTIWI</span><br>INTERNATIONAL</div>
+                    </a>
+                    <p>PT. Puri Pertiwi International is a multi-sector company committed to creating economic welfare through innovation in trading, agriculture, production, and technology.</p>
+                    <p class="footer-tagline">"Light Of Easy Life" — Be Creative</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#vision"><i class="fas fa-chevron-right"></i> Vision & Mission</a></li>
+                        <li><a href="#business"><i class="fas fa-chevron-right"></i> Business</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Brands</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> PURI Products</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> ICOMM-EX</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> JayaBaya Coffee</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Mustopa Snacks</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> SAH Rice</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> D!MS System</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest updates on products and business opportunities.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="footer-nib">
+                        <h4>NIB</h4>
+                        <p>0806220054004</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PT. Puri Pertiwi International. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/6281122331144" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
